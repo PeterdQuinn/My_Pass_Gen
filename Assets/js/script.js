@@ -34,3 +34,16 @@ var characterCount = window.prompt("Enter the count of characters betweek 8 and 
   const lowercaseLetters = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","r","s","t","u","v","x","y","z"];
   const specialCharacters = ["&","%","?","<",">","@","$","*","#","!"];
   const numbers = ["1","2","3","4","5","6","7","8","9","0"];
+
+
+
+  /////// adding an array////////////
+
+  const combinedArray = capitalLetters.concat(lowercaseLetters).concat(specialCharacters).concat(numbers);
+
+//testing please////
+console.log(combinedArray);
+///////////////////////
+var password = "";
+
+
