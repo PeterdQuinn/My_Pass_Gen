@@ -53,6 +53,29 @@ function generatePassword() {
     window.alert("WRONG CHOICE OF PASSWORD, TRY AGAIN!!.");
     return "";
   }
-  
+
+// stores the character criteria that is selected via prompts////
+  let selectedCriteria = []
 
 
+// conditionals to decide which characters populate when password is generated////
+  if (lowerConfirm === true) {
+    selectedCriteria.push(...lowerCase);
+  }
+//---------lower cash push---
+
+  if (upperConfirm === true) {
+    selectedCriteria.push(...upperCase);
+  }
+//----- upper case push----/////
+
+  if (numsConfirm === true){
+    selectedCriteria.push(...nums);
+  }
+
+  //-----  nums push---////
+
+  if (specialCharsConfirm === true) {
+    selectedCriteria.push(...specialChars);
+  }
+//--special char push----//////
