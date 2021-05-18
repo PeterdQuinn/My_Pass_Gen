@@ -25,3 +25,9 @@ var characterCount = window.prompt("Enter the count of characters betweek 8 and 
     window.alert("You did not select the correct number of characters. Try again!")
     generatePassword();
   }}
+
+
+
+  //// adding all Constants /////
+
+  const capitalLetters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","R","S","T","U","V","X","Y","Z"];
