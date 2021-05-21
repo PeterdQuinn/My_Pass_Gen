@@ -88,7 +88,7 @@ var upperCasedCharacters = [
 
 function getPasswordOptions() {
   var length = parseInt(
-    prompt('How many characters would you like your password to contain?')
+    prompt('How many characters?')
   );
 
   if (isNaN(length) === true) {
@@ -97,7 +97,7 @@ function getPasswordOptions() {
   }
 
   if (length < 8) {
-    alert('Password length must be at least 8 characters');
+    alert('length must be at least 8 characters');
     return;
   }
 
@@ -107,16 +107,16 @@ function getPasswordOptions() {
     return;
   }
   var hasSpecialCharacters = confirm(
-    'Click OK to confirm including special characters.'
+    'Need to include special characters.'
   );
   var hasNumericCharacters = confirm(
-    'Click OK to confirm including numeric characters.'
+    'Needs to include to to including numeric characters.'
   );
   var hasLowerCasedCharacters = confirm(
-    'Click OK to confirm including lowercase characters.'
+    'Needs to include lowercase characters.'
   );
   var hasUpperCasedCharacters = confirm(
-    'Click OK to confirm including uppercase characters.'
+    'Needs to include uppercase characters.'
   );
 
   if (
